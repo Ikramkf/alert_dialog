@@ -28,7 +28,7 @@ class MyAlertDialogPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
-        backgroundColor: Colors.blue,
+        backgroundColor: const Color(0xFFA66DD4),
       ),
       body: Center(
         child: Column(
@@ -37,7 +37,7 @@ class MyAlertDialogPage extends StatelessWidget {
             ElevatedButton(
               // ✅ style personnalisé
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green,
+                backgroundColor: const Color(0xFF673AB7),
                 foregroundColor: Colors.white,
               ),
               // ✅ Bouton actif
@@ -48,7 +48,7 @@ class MyAlertDialogPage extends StatelessWidget {
                   barrierDismissible: false, // empêcher la fermeture en dehors
                   builder: (BuildContext context) {
                     return AlertDialog(
-                      backgroundColor: Colors.amber,
+                      backgroundColor: const Color(0xFFA66DD4),
                       title: const Text('Important !'),
                       content: const Text('This is an important message.'),
                       actions: <Widget>[
